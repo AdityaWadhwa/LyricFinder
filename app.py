@@ -73,4 +73,4 @@ def finder():
 
 
 if __name__ == "__main__":
-	app.run(port=8000, debug=True, use_reloader=True)
+	app.run(port=8000)
