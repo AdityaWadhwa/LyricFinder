@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 url_search = "http://api.musixmatch.com/ws/1.1/track.search"
 search_params = {
-    	"apikey":"ee092e7cec4ecd85b5e69f6fa8888c54",
+    	"apikey":creds['MUSIX_API_KEY'],
     	"q_artist":"",
     	"q_track":"",
     	"page_size":1,
@@ -15,7 +15,7 @@ search_params = {
 		}
 url_lyric = "http://api.musixmatch.com/ws/1.1/track.lyrics.get"
 lyric_params = {
-    	"apikey":"ee092e7cec4ecd85b5e69f6fa8888c54",
+    	"apikey":creds['MUSIX_API_KEY'],
     	"track_id":0
 		}
 
